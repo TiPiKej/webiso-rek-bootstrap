@@ -1,0 +1,13 @@
+$primary: #312477;
+$secondary: #FF7D44;
+$blue: #61DDFE;
+$light-blue: #F8F7FF;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "blue": $blue,
+    "light-blue": $light-blue,
+);
+
+@import "~bootstrap/scss/bootstrap";
