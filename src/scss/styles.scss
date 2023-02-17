@@ -9,12 +9,14 @@ $primary: #312477;
 $secondary: #FF7D44;
 $blue: #61DDFE;
 $light-blue: #F8F7FF;
+$primary-light: #837cad;
 
 $theme-colors: (
     "dark": $dark,
     "dark-link": $dark-link,
     "white": $white,
     "primary": $primary,
+    "primary-light": $primary-light,
     "secondary": $secondary,
     "blue": $blue,
     "light-blue": $light-blue,
@@ -23,10 +25,34 @@ $theme-colors: (
 $custom-font-sizes: (
     "14": 14,
     "17": 17,
+    "18": 18,
+    "50": 50,
 );
 
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);
 
 @import "/node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Space+Grotesk&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.button-contact {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.font-space-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+@for $i from 1 through 5 {
+    @media screen and (min-width: calc(1400px + 180px * $i)) {
+        .container {
+            max-width: calc(1320px + 180px * $i);
+        }
+    }
+}
 
