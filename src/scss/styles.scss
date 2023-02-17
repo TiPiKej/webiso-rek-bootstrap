@@ -25,12 +25,14 @@ $theme-colors: (
 );
 
 $custom-font-sizes: (
+    11: 11,
     12: 12,
     14: 14,
     16: 16,
     17: 17,
     18: 18,
     20: 20,
+    30: 30,
     50: 50,
 );
 
@@ -179,4 +181,8 @@ body {
 
 .blue-o {
     top: calc(100% - 25px);
+}
+
+.w-fit {
+    width: fit-content;
 }
