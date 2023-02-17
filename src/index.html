@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="js/main.js"></script>
   </head>
-  <body class="pb-9">
+  <body>
     <div class="bg-dark text-white w-100 py-2">
       <div class="container d-flex justify-content-between py-3 fs-14">
         <div class="row text-blue">
@@ -71,9 +71,9 @@
             </div>
 
             <div class="row d-flex align-items-center gap-4">
-              <div class="col fs-12 text-primary-light fw-light text-uppercase">Play video</div>
+              <div class="col-auto fs-12 text-primary-light fw-light text-uppercase">Play video</div>
               <div class="col">
-                <div class="position-relative">
+                <div class="position-relative fixed-play-size">
                   <img src="img/play2.svg" alt="">
                   <img src="img/play3.svg" alt="" class="position-absolute start-0 top-50 bg-secondary translate-middle">
                   <img src="img/play1.svg" alt="" class="position-absolute start-50 top-50 translate-middle">
@@ -104,6 +104,160 @@
       </div>
     </div>
 
-    <div class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at voluptatum voluptatem sapiente blanditiis tenetur aperiam pariatur nam unde quos delectus perspiciatis natus, quod aut odio ullam assumenda necessitatibus optio?</div>
+    <div class="container carousel slide mb-7" id="carouselInfo">
+
+      <div class="carousel-indicators custom-carousel-indicators">
+        <Button type="button" data-bs-target="#carouselInfo" data-bs-slide-to="0" aria-label="Slide 1"></Button>
+        <Button type="button" data-bs-target="#carouselInfo" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></Button>
+        <Button type="button" data-bs-target="#carouselInfo" data-bs-slide-to="2" aria-label="Slide 3"></Button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="row gap-4 mx-0">
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_184_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Lorem Ipsum is simply dummy of the printing and typesetting</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+            </a>
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_54_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Contrary to popular belief, lorem Ipsum is not simply</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
+            </a>
+            <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_4_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">There are many variations of passages of Lorem Ipsum avai</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline text-blue">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="row gap-4 mx-0">
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_184_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Lorem Ipsum is simply dummy of the printing and typesetting</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+            </a>
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_54_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Contrary to popular belief, lorem Ipsum is not simply</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
+            </a>
+            <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_4_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">There are many variations of passages of Lorem Ipsum avai</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline text-blue">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row gap-4 mx-0">
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_184_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Lorem Ipsum is simply dummy of the printing and typesetting</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+            </a>
+            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_54_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">Contrary to popular belief, lorem Ipsum is not simply</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
+            </a>
+            <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
+              <div class="position-relative mb-4">
+                <img src="img/Shape_4_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
+                <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
+              </div>
+              <p class="fs-20 mb-4 fw-bold">There are many variations of passages of Lorem Ipsum avai</p>
+              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+              <p class="fs-17 text-decoration-underline text-blue">
+                Read more
+                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+              </p>
+
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in minus optio quasi dignissimos perferendis officia reiciendis, dolorum velit obcaecati facilis dolor nobis beatae delectus voluptates ipsam quo aliquid sequi!</p>
+    <p>Nisi cumque laudantium ipsum labore ad veniam quibusdam veritatis incidunt? Quod rem nam nisi animi saepe voluptatum. Soluta, minus dolores, vel unde hic voluptate voluptatum debitis deleniti vero porro voluptas!</p>
+    <p>Nam, ipsa adipisci ipsam quae repudiandae nihil quidem, animi iure perferendis dolore velit consequatur quis! Ipsum natus, nisi porro voluptatibus, reprehenderit architecto tempora et quia maxime possimus, fuga provident dolorem.</p>
+    <p>Repellendus voluptatum ratione quisquam aut, saepe dolorem explicabo quia? Sed explicabo debitis assumenda molestiae magnam placeat eum laborum quis perspiciatis corporis, voluptates magni consequuntur itaque excepturi nihil nostrum dignissimos nesciunt!</p>
+    <p>Tempora dolorem mollitia eum iusto saepe temporibus quam, quasi a, exercitationem veritatis eligendi modi quibusdam nisi pariatur aliquid id minus, sed sit. Ea ut voluptatem repudiandae odit tenetur itaque pariatur.</p>
+    <p>Libero rerum consequatur a laborum alias deserunt iusto necessitatibus placeat eos? Illo tempora, facere quasi minus et necessitatibus beatae quam voluptates nemo praesentium rerum ad iure dolor earum iste quo.</p>
+    <p>Quod rerum corporis ex assumenda ratione in, hic sunt asperiores iure iste, dolore nulla recusandae repellendus aliquid aspernatur impedit quas tempore expedita odit quis? Consequuntur a excepturi ut necessitatibus sed?</p>
+    <p>Ad vitae necessitatibus beatae esse quis consequatur rerum omnis eius sint asperiores. Beatae non neque id repudiandae voluptatem eaque veniam ut architecto exercitationem cupiditate. Ad quod distinctio at nemo sed?</p>
+    <p>Ducimus placeat officiis reiciendis laboriosam, culpa itaque voluptate dolore cum veniam quia blanditiis excepturi magni cupiditate cumque sunt, suscipit corporis quisquam earum ea! Recusandae, at eligendi doloremque quisquam aspernatur fugit.</p>
+    <p>Veritatis eos quia reprehenderit necessitatibus natus saepe in doloribus, sapiente debitis officia magni nulla maiores officiis facilis, at, ad corporis consequuntur ipsa odio. Nobis delectus obcaecati voluptatibus quia maiores laborum?</p>
   </body>
 </html>
