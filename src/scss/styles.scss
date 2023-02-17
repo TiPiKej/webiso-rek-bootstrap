@@ -23,13 +23,27 @@ $theme-colors: (
 );
 
 $custom-font-sizes: (
-    "14": 14,
-    "17": 17,
-    "18": 18,
-    "50": 50,
+    12: 12,
+    14: 14,
+    17: 17,
+    18: 18,
+    50: 50,
 );
 
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 5),
+  7: ($spacer * 7),
+  8: ($spacer * 8),
+  9: ($spacer * 9),
+);
 
 @import "/node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
@@ -55,4 +69,41 @@ body {
         }
     }
 }
+
+.z-n1 {
+    z-index: -1;
+}
+
+@for $i from 0 through 3 {
+    .z-#{$i} {
+        z-index: $i;
+    }
+}
+
+.rot-180 {
+    rotate: 180deg;
+}
+
+.bottom-25 {
+    bottom: 25%;
+}
+
+.w-px-7 {
+    width: $spacer * 7;
+}
+
+// @for $i from 1 through 100 {
+//     .start-#{$i} {
+//         left: #{$i}px;
+//     }
+// }
+
+.start-1 {
+    left: 1;
+}
+
+.end-1 {
+    right: 1;
+}
+
 
