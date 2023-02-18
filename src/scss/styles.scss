@@ -11,6 +11,7 @@ $blue: #61DDFE;
 $light-blue: #F8F7FF;
 $primary-light: #837cad;
 $light-blue-2: #E9E7FC;
+$gray: #A49FBE;
 
 $theme-colors: (
     "dark": $dark,
@@ -22,6 +23,7 @@ $theme-colors: (
     "blue": $blue,
     "light-blue": $light-blue,
     "light-blue-2": $light-blue-2,
+    "gray": $gray,
 );
 
 $custom-font-sizes: (
@@ -236,4 +238,12 @@ $angles: 90, 180, 270;
 
 .end-n40px {
     right: -40px;
+}
+
+.smartwww {
+    height: 12px;
+}
+
+.back-to-top {
+    width: ($spacer * 7);
 }
