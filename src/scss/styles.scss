@@ -89,8 +89,20 @@ body {
     }
 }
 
-.rot-180 {
-    rotate: 180deg;
+$angles: 90, 180, 270;
+
+@each $angle in $angles {
+    .rot-#{$angle} {
+        rotate: #{$angle}deg;
+    }
+}
+
+.rot-x-180 {
+    rotate: x 180deg;
+}
+
+.rot-y-180 {
+    rotate: y 180deg;
 }
 
 .bottom-25 {
@@ -113,6 +125,10 @@ body {
 
 .end-1 {
     right: 1;
+}
+
+.end-25 {
+    right: 25%;
 }
 
 .center-text-900 {
@@ -185,4 +201,22 @@ body {
 
 .w-fit {
     width: fit-content;
+}
+
+.h-90px {
+    height: 90px;
+}
+
+.bottom-90px {
+    bottom: 90px;
+}
+
+.notify-label-icon {
+    width: $spacer * 5;
+    text-align: center;
+    cursor: text;
+}
+
+.placeholder-primary::placeholder {
+    color: $primary;
 }
