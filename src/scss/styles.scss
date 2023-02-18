@@ -32,6 +32,7 @@ $custom-font-sizes: (
     17: 17,
     18: 18,
     20: 20,
+    22: 22,
     30: 30,
     50: 50,
 );
@@ -219,4 +220,20 @@ $angles: 90, 180, 270;
 
 .placeholder-primary::placeholder {
     color: $primary;
+}
+
+.text-decoration-underline-hover:hover {
+    text-decoration: underline!important;
+}
+
+.company-info {
+    max-width: 180px;
+}
+
+.bottom-10px {
+    bottom: 10px;
+}
+
+.end-n40px {
+    right: -40px;
 }
