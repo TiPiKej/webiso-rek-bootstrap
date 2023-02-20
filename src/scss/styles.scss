@@ -36,6 +36,8 @@ $custom-font-sizes: (
     20: 20,
     22: 22,
     30: 30,
+    40: 40,
+    45: 45,
     50: 50,
 );
 
@@ -55,6 +57,19 @@ $spacers: (
   10: ($spacer * 10),
   11: ($spacer * 11),
   12: ($spacer * 12),
+);
+
+@import "/node_modules/bootstrap/scss/_maps";
+@import "/node_modules/bootstrap/scss/_mixins";
+@import "/node_modules/bootstrap/scss/_utilities";
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "font-size": map-merge(map-get($utilities, "font-size"),
+            (responsive: true),
+        )
+    )
 );
 
 @import "/node_modules/bootstrap/scss/bootstrap";
@@ -168,6 +183,14 @@ $angles: 90, 180, 270;
     left: unset;
     bottom: 0;
     margin: 0;
+    
+    @include media-breakpoint-down(md) {
+        bottom: unset;
+        top: 100%;
+        left: 50%;
+        margin: 0;
+        transform: translateX(-50%) !important;
+    }
 }
 
 .fixed-play-size {
@@ -204,6 +227,12 @@ $angles: 90, 180, 270;
 
 .w-fit {
     width: fit-content;
+}
+
+.w-sm-unset {
+    @include media-breakpoint-up(sm) {
+        width: unset!important;
+    }
 }
 
 .h-90px {

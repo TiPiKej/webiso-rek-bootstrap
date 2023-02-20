@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="bg-dark text-white w-100 py-2">
-      <div class="container d-flex justify-content-between py-3 fs-14">
+      <div class="container-md d-flex justify-content-between py-3 fs-14 flex-wrap">
         <div class="row text-blue">
           <i class="col bi bi-envelope"></i>
           <a href="mailto:office@fresh.com" class="col-auto text-blue">office@fresh.com</a>
         </div>
-        <div class="row gap-5">
+        <div class="row gap-md-5">
           <div class="col-auto row">
             <a href="#" class="col text-dark-link text-decoration-none">About Us</a>
             <a href="#" class="col text-dark-link text-decoration-none">Information</a>
@@ -33,41 +33,61 @@
       </div>
     </div>
     
-    <div class="bg-primary text-white w-100 pb-6">
+    <nav class="navbar navbar-expand-xl bg-primary text-white w-100">
       <div class="container">
-        <div class="d-flex justify-content-between fs-17 py-4">
-          <div class="d-flex align-items-center">
+        <div class="d-flex justify-content-between fs-17 py-4 w-100 flex-column flex-sm-row">
+          <div class="d-flex align-items-center justify-content-center justify-content-sm-end mb-5 mb-sm-0">
             <img src="img/logo.svg" alt="logo">
             <img src="img/Fresh.svg" alt="Fresh">
           </div>
 
           <div class="row gap-5">
-            <div class="col row gap-5 d-flex align-items-center">
-              <div class="col">Home</div>
-              <div class="col-auto">About Us</div>
-              <div class="col-auto">Info<i class="bi bi-chevron-down ms-3"></i></div>
-              <div class="col-auto">Gallery</div>
-              <div class="col-auto">FAQ</div>
-              <div class="col-auto">Review</div>
+            <div class="col row gap-5 d-xl-flex align-items-center d-none">
+              <a href="#" class="text-decoration-none text-white col">Home</a>
+              <a href="#" class="text-decoration-none text-white col-auto">About Us</a>
+              <a href="#" class="text-decoration-none text-white col-auto">Info<i class="bi bi-chevron-down ms-3"></i></a>
+              <a href="#" class="text-decoration-none text-white col-auto">Gallery</a>
+              <a href="#" class="text-decoration-none text-white col-auto">FAQ</a>
+              <a href="#" class="text-decoration-none text-white col-auto">Review</a>
             </div>
-            <Button type="button" class="col-auto btn btn-blue fs-17 rounded-pill py-3 button-contact text-primary">
+            <div class="col-12 order-last order-sm-1 col-sm d-xl-none d-flex align-items-center justify-content-center">
+              <button class="navbar-toggler bg-blue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <a href="#" type="button" class="order-2 col-12 col-sm-auto btn btn-blue fs-17 rounded-pill py-3 button-contact text-primary">
               Contact Us
-            </Button>
+            </a>
           </div>
         </div>
 
-        <div class="px-7 mt-6 text-white">
+        <div class="collapse navbar-collapse d-xl-none" id="navbarNav">
+          <div class="navbar-nav d-xl-none align-items-center">
+            <a href="#" class="nav-link text-decoration-none text-white col">Home</a>
+            <a href="#" class="nav-link text-decoration-none text-white col-auto">About Us</a>
+            <a href="#" class="nav-link text-decoration-none text-white col-auto">Info<i class="bi bi-chevron-down ms-3"></i></a>
+            <a href="#" class="nav-link text-decoration-none text-white col-auto">Gallery</a>
+            <a href="#" class="nav-link text-decoration-none text-white col-auto">FAQ</a>
+            <a href="#" class="nav-link text-decoration-none text-white col-auto">Review</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-primary text-white w-100 py-6">
+      <div class="container-md">
+        <div class="px-lg-7 text-white">
           <p class="text-primary-light fw-light">
             Lorem ipsum has been the industry's standard
           </p>
 
-          <div class="d-flex justify-content-between">
+          <div class="d-xl-flex justify-content-between">
             <!-- czy na pewno tutaj font to jest space-grotesk? -->
             <!-- we właściwościach tekstu na adobe jest space-grotesk -->
             <!-- a ten font wygląda całkowicie inaczej niż na projekcie adobe -->
-            <div class="fs-50 font-space-grotesk fw-bold position-relative">
+            <div class="fs-xxl-45 fs-30 font-space-grotesk fw-bold position-relative z-1 w-fit">
               <span>Lorem Ipsum is simply dummy text</span>
-              <img src="img/line.svg" alt="" class="position-absolute translate-middle-y" style="right: 5%; top: 70%;">
+              <img src="img/line.svg" alt="" class="position-absolute translate-middle-y z-n1 d-none d-xl-block" style="right: 5%; top: 70%;">
             </div>
 
             <div class="row d-flex align-items-center gap-4">
@@ -90,10 +110,10 @@
       <img src="img/pol0.svg" alt="" class="position-absolute bottom-0 start-0 h-25">
 
       <div class="container position-relative p-0">
-        <img src="img/smiling-pretty-brunette-woman-dress-straw-hat.png" alt="smiling-pretty-brunette-woman-dress-straw-hat" class="px-7 w-100 position-relative z-1">
+        <img src="img/smiling-pretty-brunette-woman-dress-straw-hat.png" alt="smiling-pretty-brunette-woman-dress-straw-hat" class="px-lg-7 w-100 position-relative z-1">
 
-        <img src="img/pol1.svg" alt="" class="position-absolute bottom-25 w-px-7 start-1 text-blue">
-        <img src="img/pol2.svg" alt="" class="position-absolute bottom-0 w-px-7 end-1">
+        <img src="img/pol1.svg" alt="" class="d-none d-xl-block position-absolute bottom-25 w-px-7 start-1 text-blue">
+        <img src="img/pol2.svg" alt="" class="d-none d-xl-block position-absolute bottom-0 w-px-7 end-1">
       </div>
     </div>
 
@@ -127,20 +147,22 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
             </a>
-            <a href="#" class="col p-6 border border-2 border-light-blue-2 text-decoration-none text-primary position-relative">
+            <div class="col p-6 border border-2 border-light-blue-2 position-relative">
               <div class="position-relative mb-4">
                 <img src="img/Shape_54_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
                 <div class="bg-blue rounded-circle carousel-item-circle ms-3"></div>
               </div>
-              <p class="fs-20 mb-4 fw-bold">Contrary to popular belief, lorem Ipsum is not simply</p>
-              <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-              <p class="fs-17 text-decoration-underline">
-                Read more
-                <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
-              </p>
-
-              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
-            </a>
+              <a href="#" class="text-decoration-none text-primary">
+                <p class="fs-20 mb-4 fw-bold">Contrary to popular belief, lorem Ipsum is not simply</p>
+                <p class="fs-18 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <p class="fs-17 text-decoration-underline">
+                  Read more
+                  <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
+                </p>
+  
+                <img src="img/arrow1.svg" alt="" class="carousel-first-arrow d-none d-md-block">
+              </a>
+            </div>
             <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
               <div class="position-relative mb-4">
                 <img src="img/Shape_4_.svg" alt="" class="position-absolute top-50 start-0 translate-middle-y">
@@ -153,7 +175,7 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
 
-              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow d-none d-lg-block">
             </a>
           </div>
         </div>
@@ -183,7 +205,7 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
 
-              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
+              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow d-none d-md-block">
             </a>
             <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
               <div class="position-relative mb-4">
@@ -197,7 +219,7 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
 
-              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow d-none d-lg-block">
             </a>
           </div>
         </div>
@@ -227,7 +249,7 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
 
-              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow">
+              <img src="img/arrow1.svg" alt="" class="carousel-first-arrow d-none d-md-block">
             </a>
             <a href="#" class="col p-6 border border-2 border-primary text-decoration-none text-primary position-relative">
               <div class="position-relative mb-4">
@@ -241,7 +263,7 @@
                 <i class="bi bi-chevron-right ms-4 text-opacity-50"></i>
               </p>
 
-              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow">
+              <img src="img/arrow2.svg" alt="" class="carousel-second-arrow d-none d-lg-block">
             </a>
           </div>
         </div>
@@ -264,10 +286,10 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-start px-8 position-relative">
-          <img src="img/quote1.svg" alt="">
+        <div class="d-flex justify-content-between align-items-start px-xl-8 position-relative">
+          <img src="img/quote1.svg" alt="" class="d-none d-md-block">
           
-          <div class="container carousel slide ms-5 z-1" id="carousel-recommendation">
+          <div class="container carousel slide ms-md-5 z-1" id="carousel-recommendation">
             <div class="carousel-indicators custom-carousel-indicators2">
               <Button type="button" data-bs-target="#carousel-recommendation" data-bs-slide-to="0" aria-label="Slide 1"></Button>
               <Button type="button" data-bs-target="#carousel-recommendation" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></Button>
@@ -325,7 +347,7 @@
 
     <div class="container mb-10">
       <div class="row gap-4">
-        <div class="col">
+        <div class="col-md">
           <div class="position-relative mb-5">
             <img src="img/man.png" alt="" class="w-100">
             <div class="position-absolute top-0 left-0 p-4 row gap-2">
@@ -350,7 +372,7 @@
           </a>
         </div>
 
-        <div class="col">
+        <div class="col-md">
           <div class="position-relative mb-5">
             <img src="img/family.png" alt="" class="w-100">
             <div class="position-absolute top-0 left-0 p-4 row gap-2">
@@ -378,26 +400,26 @@
     </div>
 
     <div class="w-100 position-relative">
-      <div class="container px-7">
-        <div class="bg-light-blue position-relative py-6 px-8">
+      <div class="container-xxl px-lg-7">
+        <div class="bg-light-blue position-relative py-6 px-5 px-xl-8">
           <div class="fs-30 fw-bold text-primary position-relative w-fit">
             <span>Lorem Ipsum is simply dummy printing</span>
 
-            <img src="img/line2.svg" alt="" class="position-absolute top-100 end-0 translate-middle-y">
+            <img src="img/line2.svg" alt="" class="position-absolute top-100 end-0 translate-middle-y d-none d-md-block">
           </div>
 
           <div class="w-100 d-flex justify-content-end my-2">
-            <img src="img/arrow1.svg" alt="" class="position-absolute rot-x-180 end-25">
-            <img src="img/arrow1.svg" alt="" class="opacity-0">
+            <img src="img/arrow1.svg" alt="" class="position-absolute rot-x-180 end-25 d-none d-md-block">
+            <img src="img/arrow1.svg" alt="" class="opacity-0 d-none d-md-block">
           </div>
 
-          <div class="d-flex">
-            <label class="flex-fill me-5 h-100 position-relative">
+          <div class="d-flex flex-column flex-md-row">
+            <label class="flex-fill mb-2 mb-md-0 me-md-5 h-100 position-relative">
               <input type="text" class="form-control rounded-pill bg-white text-primary ps-6 py-3 placeholder-primary" placeholder="Your e-mail">
 
               <i class="bi bi-envelope position-absolute left-0 top-50 translate-middle-y text-secondary notify-label-icon"></i>
             </label>
-            <Button class="btn btn-blue text-white fs-17 rounded-pill py-3 px-6">
+            <Button class="btn btn-blue text-white fs-17 rounded-pill py-3 px-3 px-sm-6">
               Sign up
             </Button>
           </div>
@@ -409,16 +431,16 @@
       <div class="bg-primary h-90px position-absolute bottom-0 left-0 w-100 z-n1"></div>
     </div>
 
-    <div class="w-100 bg-primary text-white position-relative">
-      <div class="container px-7 position-relative py-6">
-        <div class="d-flex justify-content-between align-items-start">
-          <div class="d-flex align-items-center">
+    <div class="w-100 bg-primary text-white position-relative overflow-hidden">
+      <div class="container-md px-lg-7 position-relative py-6 z-1">
+        <div class="d-flex justify-content-between align-items-start flex-wrap">
+          <a class="d-flex align-items-center" href="#">
             <img src="img/logo.svg" alt="logo">
             <img src="img/Fresh.svg" alt="Fresh">
-          </div>
+          </a>
 
-          <div class="row gap-6">
-            <div class="col-auto d-flex flex-column">
+          <div class="row gap-6 mt-6 mt-sm-0 w-100 w-sm-unset">
+            <div class="col col-sm-auto d-flex flex-column">
               <a href="#" class="text-white text-decoration-none text-decoration-underline-hover lh-lg">Home</a>
               <a href="#" class="text-white text-decoration-none text-decoration-underline-hover lh-lg">About Us</a>
               <a href="#" class="text-white text-decoration-none text-decoration-underline-hover lh-lg">Info</a>
@@ -431,7 +453,7 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-start font-space-grotesk mb-6">
+        <div class="d-flex justify-content-start font-space-grotesk mt-6 mt-sm-0 mb-6 flex-wrap">
           <p class="company-info fs-22 me-7">Webiso Sp. J. Domiński, Maziarz</p>
 
           <div class="d-flex flex-column align-items-start justify-content-start">
@@ -440,28 +462,28 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-between">
-          <Button class="btn btn-blue text-primary fs-17 rounded-pill py-3 px-6">
+        <div class="d-flex align-items-center justify-content-sm-between flex-column flex-sm-row">
+          <Button class="btn btn-blue text-primary fs-17 rounded-pill py-3 px-6 w-100 w-sm-unset">
             Contact us
           </Button>
 
-          <div class="row text-secondary d-flex align-items-center">
-            <div class="col"><i class="bi bi-facebook"></i></div>
-            <div class="col"><i class="bi bi-twitter"></i></div>
-            <div class="col"><i class="bi bi-instagram"></i></div>
+          <div class="row d-flex align-items-center w-fit w-sm-unset mt-3 mt-sm-0">
+            <a class="col text-secondary" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="col text-secondary" href="#"><i class="bi bi-twitter"></i></a>
+            <a class="col text-secondary" href="#"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
-        <img src="img/pol0.svg" alt="" class="position-absolute bottom-10px end-n40px rot-90">
+        <img src="img/pol0.svg" alt="" class="position-absolute bottom-10px end-n40px rot-90 d-none d-lg-block">
       </div>
 
       <img src="img/pol3.svg" alt="" class="position-absolute bottom-0 start-0">
     </div>
 
     <div class="w-100 bg-light-blue text-gray">
-      <div class="container d-flex justify-content-end p-0 ps-7">
+      <div class="container-md d-flex justify-content-end p-0 ps-lg-7">
         <div class="d-flex justify-content-between align-items-center
-         py-4 w-100">
+         py-4 w-100 flex-wrap px-2 px-md-0">
           <div class="fs-16">© 2021 Wszystkie prawa zastrzeżone</div>
 
           <img src="img/smartwww.png" alt="smartwww" class="smartwww">
